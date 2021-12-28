@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header-section {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: sandybrown; */
+  background-image: url(img/p1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.logo {
+  font-size: 5rem;
+}
+
+.sub-line {
+  padding: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.sub-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: white;
+}
+
+.sub-line::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.search-box {
+  display: block;
+  margin: 60px auto 20px;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.search-btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+/* gallery */
+.gallery {
+  width: 100%;
+  padding: 40px;
+  background: #fff;
+  columns: 4;
+  column-gap: 20px;
+}
+@media (max-width: 700px) {
+  .gallery {
+    columns: 2;
+    column-gap: 10px;
+    padding: 10px;
+  }
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: pink;
+}
+
+/* pop up section */
+
+/* .pop-up {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.img-box-pop {
+  height: 80%;
+  width: 70%;
+  position: relative;
+}
+.pop-up-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+} */
