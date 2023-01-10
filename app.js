@@ -15,7 +15,7 @@ const gallery = document.querySelector(".gallery");
 
 let allImages;
 
-const getImages = () => {
+const getImages = async () => {
   if (query) {
     const Search_photo = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query="${query}&per_page=30"`;
 
